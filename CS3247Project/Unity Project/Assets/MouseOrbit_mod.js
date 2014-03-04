@@ -1,16 +1,15 @@
 var target : Transform;
+var moveJoystick : Joystick;
 var distance = 5.0;
 
-var xSpeed = 250.0;
-var ySpeed = 120.0;
+var xSpeed = 125.0;
+var ySpeed = 60.0;
 
-var yMinLimit = -20;
+var yMinLimit = 0;
 var yMaxLimit = 80;
 
 private var x = 0.0;
 private var y = 0.0;
-
-var yPosition = Vector3(0.0,0.0,0.0);
 
 @script AddComponentMenu("Camera-Control/Mouse Orbit")
 
@@ -24,40 +23,35 @@ function Start () {
 }
 
 function LateUpdate () {
+/*
     if (target) {
-    	if (Input.GetKey("left")){
+    	var touchKey_x = moveJoystick.position.x;
+    	var touchKey_y = moveJoystick.position.y;
+    	if (moveJoystick.position.x == -1){
     		x+=xSpeed*0.02;
     	}
-    	if (Input.GetKey("right")){
+    	if (moveJoystick.position.x == 1){
     		x-=xSpeed*0.02;
     	}
     	
-        if (Input.GetKey("up")){
+        if (moveJoystick.position.y == 1){
     		y+=ySpeed*0.02;
     	}
-    	if (Input.GetKey("down")){
+    	if (moveJoystick.position.y == -1){
     		y-=ySpeed*0.02;
     	}
-    	
-    	if (Input.GetKey("w")){
-    	    yPosition.y+=0.1;
-    	    //center.transform.y+=0.1;
-    	}
-    	if (Input.GetKey("s")){
-    	    yPosition.y-=0.1;
-    	    //center.transform.y+=0.1;
-    	}
+
         //x += Input.GetAxis("Mouse X") * xSpeed * 0.02;
         //y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02;
  		
- 		//y = ClampAngle(y, yMinLimit, yMaxLimit);
+ 		y = ClampAngle(y, yMinLimit, yMaxLimit);
  		       
         var rotation = Quaternion.Euler(y, x, 0);
-        var position = rotation * Vector3(0.0, 0.0, -distance) + target.position + yPosition;
+        var position = rotation * Vector3(0.0, 0.0, -distance) + target.position;
         
         transform.rotation = rotation;
         transform.position = position;
-    }
+    }*/
 }
 
 static function ClampAngle (angle : float, min : float, max : float) {

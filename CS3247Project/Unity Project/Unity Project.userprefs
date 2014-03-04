@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CenterMovement.cs">
+    <Files>
+      <File FileName="Assets\MouseOrbit_mod.js" Line="1" Column="1" />
+      <File FileName="Unity Project.sln" Line="1" Column="1" />
+      <File FileName="Assets\CenterMovement.cs" Line="33" Column="3" />
+      <File FileName="Assets\ObjectPhysics.js" Line="1" Column="1" />
+      <File FileName="Assets\MouseOrbit_mod.js" Line="1" Column="1" />
+      <File FileName="Assets\SwipeMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\TouchLogic.cs" Line="1" Column="1" />
+      <File FileName="Assets\SwipeRotationPlayer.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
