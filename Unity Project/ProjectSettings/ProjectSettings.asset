@@ -10,7 +10,7 @@ PlayerSettings:
   targetGlesGraphics: 1
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: Water Drop
+  companyName: WaterDrop
   productName: LastPiece
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -112,7 +112,7 @@ PlayerSettings:
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 2800000, guid: 61b348461797afc40abacf042657d491, type: 3}
+    - m_Icon: {fileID: 2800000, guid: 7e9bdca52ac74344593af8d01e954595, type: 3}
       m_Size: 128
   - m_BuildTarget: Android
     m_Icons:
