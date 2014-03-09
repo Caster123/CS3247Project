@@ -6,19 +6,27 @@ public class HitStartMission : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
     }
 
     void OnMouseDown()
     {
-        // this object was clicked - do something
-        Destroy(this.gameObject);
-        Application.LoadLevel("basic");
+        this.gameObject.rigidbody.isKinematic = false;
+        transform.Rotate(3f, 30f, 0);
+        //Destroy(this.gameObject);
+        //Application.LoadLevel("basic");
+        //Application.LoadLevel("1st");
+        StartCoroutine(Wait(3.0F));
+        //Application.LoadLevel("basic");
     }
+
+    IEnumerator Wait(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        Application.LoadLevel("basic");
+    }    
 }
