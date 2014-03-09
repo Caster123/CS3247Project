@@ -19,7 +19,7 @@ public class Shoot : TouchLogic {
 		RaycastHit hit;
 		if (Physics.Raycast (camera.transform.position, direction, out hit)) {
 			float distanceToGround = hit.distance;
-			print(hit.collider.gameObject.tag);
+			//print(hit.collider.gameObject.tag);
 			hit.collider.gameObject.rigidbody.AddForce(direction * hoverForce, ForceMode.Acceleration);
 		}
 				

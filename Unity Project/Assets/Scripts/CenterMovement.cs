@@ -9,7 +9,7 @@ public class CenterMovement : TouchLogic {
 	public static float speed = 1.0f;
 	public float upperBound = 8;
 	public float lowerBound = 0;
-	public float distance = 20.0f;
+	public float distance = 25.0f;
 	void Start () {
 	}
 	

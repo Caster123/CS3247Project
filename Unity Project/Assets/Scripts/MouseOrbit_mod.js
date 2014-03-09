@@ -1,6 +1,6 @@
 var target : Transform;
 var moveJoystick : Joystick;
-var distance = 5.0;
+var distance = 25.0;
 
 var xSpeed = 125.0;
 var ySpeed = 60.0;

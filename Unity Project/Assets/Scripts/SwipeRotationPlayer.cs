@@ -8,7 +8,7 @@ public class SwipeRotationPlayer : TouchLogic
 	public Transform player;
 	private float pitch = 0.0f,	yaw = 0.0f;
 	public Transform target;
-	public float distance = 20.0f;
+	public float distance = 25.0f;
 	
 	public float xSpeed = 125.0f;
 	public float ySpeed = 60.0f;
@@ -45,8 +45,8 @@ public class SwipeRotationPlayer : TouchLogic
 	
 	public override void OnTouchMoved()
 	{
-		x += Input.GetTouch(touch2Watch).deltaPosition.x * xSpeed * invertPitch * 0.02f * Time.deltaTime;
-		y -= Input.GetTouch(touch2Watch).deltaPosition.y * ySpeed * invertPitch * 0.02f * Time.deltaTime;
+		x += Input.GetTouch(touch2Watch).deltaPosition.x * xSpeed * invertPitch * Time.deltaTime;
+		y -= Input.GetTouch(touch2Watch).deltaPosition.y * ySpeed * invertPitch * Time.deltaTime;
 		
 		y = ClampAngle(y, yMinLimit, yMaxLimit);
 		
