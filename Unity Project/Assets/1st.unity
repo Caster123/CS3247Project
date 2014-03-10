@@ -1219,11 +1219,11 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
-  m_FontSize: 20
+  m_FontSize: 28
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278240255
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1992937389

@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CenterMovement.cs" />
      <Compile Include="Assets\Scripts\Counter.cs" />
+     <Compile Include="Assets\Scripts\HitIntroMan.cs" />
      <Compile Include="Assets\Scripts\HitStartMission.cs" />
      <Compile Include="Assets\Scripts\ObjectProperty.cs" />
      <Compile Include="Assets\Scripts\Shoot.cs" />
