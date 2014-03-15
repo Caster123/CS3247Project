@@ -39,15 +39,20 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CenterMovement.cs" />
      <Compile Include="Assets\Scripts\Counter.cs" />
+     <Compile Include="Assets\Scripts\HitIntro1.cs" />
+     <Compile Include="Assets\Scripts\HitIntro2.cs" />
+     <Compile Include="Assets\Scripts\HitIntro3.cs" />
+     <Compile Include="Assets\Scripts\HitIntro4.cs" />
+     <Compile Include="Assets\Scripts\HitIntro5.cs" />
      <Compile Include="Assets\Scripts\HitIntroMan.cs" />
      <Compile Include="Assets\Scripts\HitStartMission.cs" />
      <Compile Include="Assets\Scripts\ObjectProperty.cs" />

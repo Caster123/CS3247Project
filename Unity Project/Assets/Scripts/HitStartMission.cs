@@ -20,13 +20,13 @@ public class HitStartMission : MonoBehaviour
         //Destroy(this.gameObject);
         //Application.LoadLevel("basic");
         //Application.LoadLevel("1st");
-        StartCoroutine(Wait(3.0F));
+        StartCoroutine(Wait(1.5F));
         //Application.LoadLevel("basic");
     }
 
     IEnumerator Wait(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        Application.LoadLevel("basic");
+        Application.LoadLevel("ManIntroduction1");
     }    
 }

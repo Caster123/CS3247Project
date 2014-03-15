@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Main Menu.unity
+  - enabled: 1
     path: Assets/1st.unity
   - enabled: 1
     path: Assets/Fail.unity
   - enabled: 1
     path: Assets/Success.unity
+  - enabled: 1
+    path: Assets/ManIntroduction1.unity
+  - enabled: 1
+    path: Assets/ManIntroduction2.unity
+  - enabled: 1
+    path: Assets/ManIntroduction3.unity
+  - enabled: 1
+    path: Assets/ManIntroduction4.unity
+  - enabled: 1
+    path: Assets/ManIntroduction5.unity
