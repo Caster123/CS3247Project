@@ -16,6 +16,7 @@ public class HitStartMission : MonoBehaviour
     void OnMouseDown()
     {
         this.gameObject.rigidbody.isKinematic = false;
+        this.gameObject.rigidbody.AddRelativeForce(-Vector3.forward * 1000);
         transform.Rotate(3f, 30f, 0);
         //Destroy(this.gameObject);
         //Application.LoadLevel("basic");

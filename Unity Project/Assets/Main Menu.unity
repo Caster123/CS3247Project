@@ -225,7 +225,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 169154133}
   m_LocalRotation: {x: -.464246243, y: .475039154, z: -.532479525, w: .524670184}
-  m_LocalPosition: {x: -.774079084, y: .330039561, z: -.343528509}
+  m_LocalPosition: {x: -.755169928, y: .275452286, z: -.335241705}
   m_LocalScale: {x: .0228869878, y: .2039067, z: .482449293}
   m_Children: []
   m_Father: {fileID: 1025416548}
@@ -493,7 +493,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 638136224}
-  m_Text: New Story
+  m_Text: Tutorial
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -535,7 +535,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 638136224}
   m_LocalRotation: {x: -.464246243, y: .475039154, z: -.532479525, w: .524670184}
-  m_LocalPosition: {x: -.83471787, y: .15928784, z: -.363632858}
+  m_LocalPosition: {x: -.835455835, y: .174098715, z: -.361673802}
   m_LocalScale: {x: .0231479332, y: .2039067, z: .482449293}
   m_Children: []
   m_Father: {fileID: 748584984}
@@ -680,7 +680,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 748584980}
   m_LocalRotation: {x: .703333497, y: .0210371446, z: .0203977339, w: .710255921}
-  m_LocalPosition: {x: -5.46113396, y: .615028381, z: .473718882}
+  m_LocalPosition: {x: -5.46113396, y: .615028381, z: .642533541}
   m_LocalScale: {x: .177550897, y: 7.42866421, z: .548103213}
   m_Children:
   - {fileID: 638136227}
@@ -723,6 +723,7 @@ GameObject:
   - 65: {fileID: 1025416551}
   - 23: {fileID: 1025416550}
   - 54: {fileID: 1025416549}
+  - 114: {fileID: 1025416553}
   m_Layer: 0
   m_Name: Menu Horizontal Bar3
   m_TagString: Untagged
@@ -797,6 +798,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1025416547}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1025416553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1025416547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f636741c1ca10f645996a5407d53dc62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1072351602
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,7 +1030,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1173104098}
   m_LocalRotation: {x: -.464246243, y: .475039154, z: -.532479525, w: .524670184}
-  m_LocalPosition: {x: -.743433118, y: .246193081, z: -.354720116}
+  m_LocalPosition: {x: -.743402123, y: .245512381, z: -.354753345}
   m_LocalScale: {x: .0228869878, y: .2039067, z: .482449293}
   m_Children: []
   m_Father: {fileID: 1513153929}
@@ -1114,6 +1126,7 @@ GameObject:
   - 65: {fileID: 1513153931}
   - 23: {fileID: 1513153930}
   - 54: {fileID: 1513153933}
+  - 114: {fileID: 1513153934}
   m_Layer: 0
   m_Name: Menu Horizontal Bar2
   m_TagString: Untagged
@@ -1188,3 +1201,14 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1513153934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1513153928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27b8f6ebc157237489b09a3c1b0129d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
