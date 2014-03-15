@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CenterMovement.cs" />
      <Compile Include="Assets\Scripts\Counter.cs" />
+     <Compile Include="Assets\Scripts\Exit.cs" />
      <Compile Include="Assets\Scripts\HitIntro1.cs" />
      <Compile Include="Assets\Scripts\HitIntro2.cs" />
      <Compile Include="Assets\Scripts\HitIntro3.cs" />
