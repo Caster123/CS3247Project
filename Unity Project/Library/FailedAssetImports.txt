@@ -1,2 +1,0 @@
-Assets/ManIntroduction3.unity
-Assets/Success.unity
