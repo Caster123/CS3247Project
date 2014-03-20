@@ -46,9 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Example\SampleCodeUse.cs" />
      <Compile Include="Assets\Scripts\CenterMovement.cs" />
      <Compile Include="Assets\Scripts\Counter.cs" />
+     <Compile Include="Assets\Scripts\DungeonCamera.cs" />
      <Compile Include="Assets\Scripts\Exit.cs" />
+     <Compile Include="Assets\Scripts\FollowCamera.cs" />
      <Compile Include="Assets\Scripts\HitIntro1.cs" />
      <Compile Include="Assets\Scripts\HitIntro2.cs" />
      <Compile Include="Assets\Scripts\HitIntro3.cs" />
@@ -58,33 +61,63 @@
      <Compile Include="Assets\Scripts\HitMulti.cs" />
      <Compile Include="Assets\Scripts\HitSingle.cs" />
      <Compile Include="Assets\Scripts\HitStartMission.cs" />
+     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
      <Compile Include="Assets\Scripts\ObjectProperty.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\ReturnMainMenu.cs" />
      <Compile Include="Assets\Scripts\Shoot.cs" />
      <Compile Include="Assets\Scripts\SwipeMovement.cs" />
      <Compile Include="Assets\Scripts\SwipeRotationPlayer.cs" />
      <Compile Include="Assets\Scripts\TouchLogic.cs" />
+     <Compile Include="Assets\Source\DrawActivity.cs" />
+     <Compile Include="Assets\Source\DrawActivityOnResult.cs" />
+     <Compile Include="Assets\Source\DrawingArea.cs" />
+     <Compile Include="Assets\Source\DrawingAreaOnResult.cs" />
+     <Compile Include="Assets\Source\ZLog.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
+     <None Include="Assets\Plugins\Android\res\layout\editor_basic_editor.xml" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+     <None Include="Assets\Plugins\Android\res\xml\sammoptionpreferences.xml" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+     <None Include="Assets\Plugins\Android\res\layout\drawing_area.xml" />
+     <None Include="Assets\Plugins\Android\res\values\arrays.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\mspinnertext.xml" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Plugins\Android\res\drawable-hdpi\selector_tool_bg.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable-hdpi\selector_filling.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable-hdpi\selector_undo.xml" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Plugins\Android\res\drawable-hdpi\selector_eraser.xml" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\mspinnertext_tablet.xml" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Plugins\Android\res\menu\drawactivity_menu.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable-hdpi\selector_image.xml" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+     <None Include="Assets\Plugins\Android\res\drawable-hdpi\selector_colorpicker.xml" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\Plugins\Android\res\values-large\dimens.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable-hdpi\selector_save.xml" />
+     <None Include="Assets\Plugins\Android\res\values\styles.xml" />
+     <None Include="Assets\Plugins\Android\res\values\strings.xml" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
+     <None Include="Assets\Plugins\Android\res\drawable-hdpi\selector_pen.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\mspinner.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable-hdpi\selector_redo.xml" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\Plugins\Android\res\values\dimens.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable-hdpi\selector_text.xml" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>

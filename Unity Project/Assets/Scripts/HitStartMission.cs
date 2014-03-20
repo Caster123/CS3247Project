@@ -8,6 +8,7 @@ public class HitStartMission : MonoBehaviour
     {
     }
 
+    public AudioClip hit = Resources.Load("building crush") as AudioClip;
     // Update is called once per frame
     void Update()
     {
@@ -15,6 +16,7 @@ public class HitStartMission : MonoBehaviour
 
     void OnMouseDown()
     {
+        audio.PlayOneShot(hit);
         this.gameObject.rigidbody.isKinematic = false;
         this.gameObject.rigidbody.AddRelativeForce(-Vector3.forward * 1000);
         transform.Rotate(3f, 30f, 0);
