@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Example\SampleCodeUse.cs" />
+     <Compile Include="Assets\Scripts\BackToMenu.cs" />
      <Compile Include="Assets\Scripts\Brick_Basic.cs" />
      <Compile Include="Assets\Scripts\CenterMovement.cs" />
      <Compile Include="Assets\Scripts\Control.cs" />
@@ -67,7 +68,9 @@
      <Compile Include="Assets\Scripts\LookAtCamera.cs" />
      <Compile Include="Assets\Scripts\ObjectProperty.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\Restart.cs" />
      <Compile Include="Assets\Scripts\ReturnMainMenu.cs" />
+     <Compile Include="Assets\Scripts\SharedBehaviour.cs" />
      <Compile Include="Assets\Scripts\Shoot.cs" />
      <Compile Include="Assets\Scripts\SwipeMovement.cs" />
      <Compile Include="Assets\Scripts\SwipeRotationPlayer.cs" />

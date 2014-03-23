@@ -37,5 +37,8 @@ public class Brick_Basic : MonoBehaviour {
         }
         yield return new WaitForSeconds(waitTime);
         Destroy(this.gameObject);
+		GameObject target = GameObject.Find("Counter");
+		Counter c = target.GetComponent<Counter>();
+		c.addRemove();
     }
 }
