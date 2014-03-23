@@ -27,6 +27,6 @@ public class HitIntro5 : MonoBehaviour
     IEnumerator Wait(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        Application.LoadLevel("1st");
+        Application.LoadLevel("Tutorial");
     }    
 }

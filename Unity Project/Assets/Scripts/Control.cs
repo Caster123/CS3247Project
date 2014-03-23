@@ -30,6 +30,7 @@ public class Control : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		yConstant = player.transform.position.y;
 		timeCurrent = Time.fixedTime;
 		if ((Input.GetMouseButtonDown (0) && !continuing) || (!Input.GetMouseButtonUp(0)&&continuing)) {
 						if (continuing) {
@@ -78,6 +79,7 @@ public class Control : MonoBehaviour {
 								if (this.name == "Down") {
 									float move = Mathf.Max(-upSpeed * timeButtonHeld, LowerBound - player.transform.position.y);
 									player.transform.Translate (0, move, 0);
+
 								}
 								if (this.name == "Left") {
 									player.transform.Rotate(0, turnSpeed, 0);
