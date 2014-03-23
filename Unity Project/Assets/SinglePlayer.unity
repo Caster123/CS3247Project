@@ -113,7 +113,7 @@ Transform:
   m_PrefabInternal: {fileID: 839204774}
   m_GameObject: {fileID: 49610480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 19.3920441, z: -50}
+  m_LocalPosition: {x: 0, y: 19.3920441, z: -70}
   m_LocalScale: {x: .339755654, y: .339755654, z: .290750206}
   m_Children:
   - {fileID: 1975691264}
@@ -333,7 +333,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 159193457}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.31559753, y: 51.2240524, z: .744054794}
+  m_LocalPosition: {x: 0, y: 51.2240524, z: 0}
   m_LocalScale: {x: 37.0593147, y: 14.546855, z: 35.9423637}
   m_Children: []
   m_Father: {fileID: 0}
@@ -523,7 +523,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 253832365}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.31559753, y: 15.9344406, z: .744054794}
+  m_LocalPosition: {x: 0, y: 15.9344406, z: 0}
   m_LocalScale: {x: 37.0593147, y: 14.546855, z: 35.9423637}
   m_Children: []
   m_Father: {fileID: 0}
@@ -645,7 +645,7 @@ GameObject:
   - 65: {fileID: 481409610}
   - 23: {fileID: 481409609}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: blockR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -825,7 +825,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400060, guid: f727e59d707725a45b409bd22dc89bc3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -50
+      value: -70
       objectReference: {fileID: 0}
     - target: {fileID: 400060, guid: f727e59d707725a45b409bd22dc89bc3, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1421,7 +1421,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1511504950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.31559753, y: 32.08638, z: .744054794}
+  m_LocalPosition: {x: 0, y: 32.08638, z: 0}
   m_LocalScale: {x: 37.0593147, y: 14.546855, z: 35.9423637}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1622,7 +1622,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1746258546}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.31559753, y: 4.0178833, z: .744054794}
+  m_LocalPosition: {x: 0, y: 4.0178833, z: 0}
   m_LocalScale: {x: 37.0593147, y: 4.79257965, z: 35.9423637}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1884,7 +1884,7 @@ GameObject:
   - 65: {fileID: 2037559874}
   - 23: {fileID: 2037559873}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: blockL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
