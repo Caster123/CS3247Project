@@ -302,7 +302,7 @@ GameObject:
   - 82: {fileID: 328059740}
   m_Layer: 0
   m_Name: Stone_Basic_Purple
-  m_TagString: Untagged
+  m_TagString: 32
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -459,7 +459,7 @@ GameObject:
   - 82: {fileID: 509980347}
   m_Layer: 0
   m_Name: Stone_Basic_Shiny
-  m_TagString: Untagged
+  m_TagString: 64
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -616,7 +616,7 @@ GameObject:
   - 82: {fileID: 600057607}
   m_Layer: 0
   m_Name: Stone_Basic_Green
-  m_TagString: Untagged
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -753,7 +753,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 600057606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.24381161, z: 0}
+  m_LocalPosition: {x: 0, y: 3.83718109, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -773,7 +773,7 @@ GameObject:
   - 82: {fileID: 604664443}
   m_Layer: 0
   m_Name: Stone_Basic_Silver
-  m_TagString: Untagged
+  m_TagString: 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -910,7 +910,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 604664442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.04521465, z: 0}
+  m_LocalPosition: {x: 0, y: 4.9594059, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -930,7 +930,7 @@ GameObject:
   - 82: {fileID: 1281063024}
   m_Layer: 0
   m_Name: Stone_Basic_Gold
-  m_TagString: Untagged
+  m_TagString: 16
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1087,7 +1087,7 @@ GameObject:
   - 82: {fileID: 1535303179}
   m_Layer: 0
   m_Name: Stone_Basic_Blue
-  m_TagString: Untagged
+  m_TagString: 8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1224,7 +1224,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1535303178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.86572361, z: 0}
+  m_LocalPosition: {x: 0, y: 6.11863232, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1244,7 +1244,7 @@ GameObject:
   - 82: {fileID: 1739815459}
   m_Layer: 0
   m_Name: Stone_Basic_Red
-  m_TagString: Untagged
+  m_TagString: 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

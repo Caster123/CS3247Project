@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class Brick_Basic : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
+    void Start()
+    {
+        rigidbody.SetDensity((float)Convert.ToInt32(this.tag));
 	}
 
     public AudioClip attack = Resources.Load("lazer") as AudioClip;
