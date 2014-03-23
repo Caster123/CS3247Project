@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\HitMulti.cs" />
      <Compile Include="Assets\Scripts\HitSingle.cs" />
      <Compile Include="Assets\Scripts\HitStartMission.cs" />
+     <Compile Include="Assets\Scripts\LaserScript.cs" />
      <Compile Include="Assets\Scripts\LookAtCamera.cs" />
      <Compile Include="Assets\Scripts\ObjectProperty.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
