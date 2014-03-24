@@ -14,6 +14,7 @@ public class Counter : MonoBehaviour {
 	void Start () {
 		numRemoved = 0;
 		//print (layerNum);
+		SharedBehaviour.current.currentLevel = level;
 		StartCoroutine(updateDisplay ());
 	}
 
@@ -28,7 +29,6 @@ public class Counter : MonoBehaviour {
 				if (onGround(goArray[i])){
 					print ("Game End");
 					fail = true;
-					SharedBehaviour.current.currentLevel = level;
 					StartCoroutine (Fail());
 				}
 			}
@@ -64,7 +64,7 @@ public class Counter : MonoBehaviour {
 		if (!fail)
 			if (numRemoved == numTarget) {
 				print ("Game Success!");
-				SharedBehaviour.current.currentLevel = level;
+				//if (SharedBehaviour != null)
 				StartCoroutine (Success());
 			}
 	}

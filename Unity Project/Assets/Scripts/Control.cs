@@ -9,6 +9,8 @@ public class Control : MonoBehaviour {
 	public Transform center;
 	public float UpperBound = 100.0f;
 	public float LowerBound = 0.0f;
+	public Texture2D up;
+	public Texture2D down;
 
 	float timeCurrent;
 	float timeAtButtonDown ; 
@@ -104,14 +106,23 @@ public class Control : MonoBehaviour {
 
 	void OnMouseDown()
 	{
-		timeAtButtonDown = timeCurrent;
-		continuing = true;
-		angle = Mathf.Atan2 (player.transform.position.z, player.transform.position.x)*Mathf.Rad2Deg;
-		print (angle);
+		if (!isPause ()){
+			this.guiTexture.texture = down;
+			timeAtButtonDown = timeCurrent;
+			continuing = true;
+			angle = Mathf.Atan2 (player.transform.position.z, player.transform.position.x)*Mathf.Rad2Deg;
+			print (angle);
+		}
 	}
 
 	void OnMouseUp()
 	{
+		this.guiTexture.texture = up;
+	}
 
+	bool isPause(){
+		GameObject target = GameObject.Find("Pause");
+		Pause p = target.GetComponent<Pause>();
+		return p.check();
 	}
 }

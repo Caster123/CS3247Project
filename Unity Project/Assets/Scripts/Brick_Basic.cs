@@ -19,14 +19,17 @@ public class Brick_Basic : MonoBehaviour {
 
     void OnMouseDown()
     {
-        audio.pitch = (float)1.5;
-        audio.PlayOneShot(attack);
+		if (!isPause())
+		{
+	        audio.pitch = (float)1.5;
+	        audio.PlayOneShot(attack);
 
-        
-        //Application.LoadLevel("basic");
-        //Application.LoadLevel("1st");
-        StartCoroutine(Wait(0.0F));
-        //Application.LoadLevel("basic");
+	        
+	        //Application.LoadLevel("basic");
+	        //Application.LoadLevel("1st");
+	        StartCoroutine(Wait(0.0F));
+	        //Application.LoadLevel("basic");
+		}
     }
 
     IEnumerator Wait(float waitTime)
@@ -44,4 +47,12 @@ public class Brick_Basic : MonoBehaviour {
 		Counter c = target.GetComponent<Counter>();
 		c.addRemove();
     }
+	
+	bool isPause()
+	{
+		GameObject target = GameObject.Find("Pause");
+		Pause p = target.GetComponent<Pause>();
+		return p.check();
+	}
+
 }

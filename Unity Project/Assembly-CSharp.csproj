@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Control.cs" />
      <Compile Include="Assets\Scripts\Counter.cs" />
      <Compile Include="Assets\Scripts\DungeonCamera.cs" />
+     <Compile Include="Assets\Scripts\Enter.cs" />
      <Compile Include="Assets\Scripts\Exit.cs" />
      <Compile Include="Assets\Scripts\FollowCamera.cs" />
      <Compile Include="Assets\Scripts\HitIntro1.cs" />
@@ -67,6 +68,7 @@
      <Compile Include="Assets\Scripts\LaserScript.cs" />
      <Compile Include="Assets\Scripts\LookAtCamera.cs" />
      <Compile Include="Assets\Scripts\ObjectProperty.cs" />
+     <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Restart.cs" />
      <Compile Include="Assets\Scripts\ReturnMainMenu.cs" />
@@ -74,6 +76,7 @@
      <Compile Include="Assets\Scripts\Shoot.cs" />
      <Compile Include="Assets\Scripts\SwipeMovement.cs" />
      <Compile Include="Assets\Scripts\SwipeRotationPlayer.cs" />
+     <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\TouchLogic.cs" />
      <Compile Include="Assets\Source\DrawActivity.cs" />
      <Compile Include="Assets\Source\DrawActivityOnResult.cs" />
