@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Counter : MonoBehaviour {
-
+	public float timeToWait = 3.0f;
 	public int numTarget,layerNum;
 	public int level = 0;
 	private int numRemoved;
@@ -14,8 +14,9 @@ public class Counter : MonoBehaviour {
 	void Start () {
 		numRemoved = 0;
 		//print (layerNum);
-		SharedBehaviour.current.currentLevel = level;
+		//print ("EXE");
 		StartCoroutine(updateDisplay ());
+		SharedBehaviour.current.currentLevel = level;
 	}
 
 	void checkForFailure() {
@@ -57,8 +58,8 @@ public class Counter : MonoBehaviour {
 	}
 
 	public IEnumerator updateDisplay () {
-		guiText.text = "Remaining: "+(numTarget - numRemoved);
-		yield return new WaitForSeconds(3.0f);
+		guiText.text = (numTarget - numRemoved).ToString();
+		yield return new WaitForSeconds(timeToWait);
 		print ("Start checking");
 		checkForFailure();
 		if (!fail)

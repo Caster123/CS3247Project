@@ -19,8 +19,9 @@ public class Brick_Basic : MonoBehaviour {
 
     void OnMouseDown()
     {
-		if (!isPause())
+		if (!isPause() && isReady())
 		{
+			reset ();
 	        audio.pitch = (float)1.5;
 	        audio.PlayOneShot(attack);
 
@@ -55,4 +56,17 @@ public class Brick_Basic : MonoBehaviour {
 		return p.check();
 	}
 
+	bool isReady()
+	{
+		GameObject target = GameObject.Find("EnergyTimer");
+		EnergyTimer et = target.GetComponent<EnergyTimer>();
+		return et.isReady();
+	}
+
+	void reset()
+	{
+		GameObject target = GameObject.Find("EnergyTimer");
+		EnergyTimer et = target.GetComponent<EnergyTimer>();
+		et.Reset();
+	}
 }

@@ -11,6 +11,7 @@ public class HitIntro3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		guiTexture.pixelInset =  new Rect(0, 0, Screen.width, Screen.height);
     }
 
     void OnMouseDown()

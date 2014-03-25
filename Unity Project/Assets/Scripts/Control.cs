@@ -28,6 +28,7 @@ public class Control : MonoBehaviour {
 						* (center.transform.position.z - player.transform.position.z));
 		angle = Mathf.Atan2 (player.transform.position.z, player.transform.position.x) * Mathf.Rad2Deg;
 		yConstant = player.transform.position.y;
+
 	}
 	
 	// Update is called once per frame

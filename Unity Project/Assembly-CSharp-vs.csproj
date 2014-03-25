@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Control.cs" />
      <Compile Include="Assets\Scripts\Counter.cs" />
      <Compile Include="Assets\Scripts\DungeonCamera.cs" />
+     <Compile Include="Assets\Scripts\EnergyTimer.cs" />
      <Compile Include="Assets\Scripts\Enter.cs" />
      <Compile Include="Assets\Scripts\Exit.cs" />
      <Compile Include="Assets\Scripts\FollowCamera.cs" />
@@ -70,6 +71,7 @@
      <Compile Include="Assets\Scripts\ObjectProperty.cs" />
      <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\ResolutionControl.cs" />
      <Compile Include="Assets\Scripts\Restart.cs" />
      <Compile Include="Assets\Scripts\ReturnMainMenu.cs" />
      <Compile Include="Assets\Scripts\SharedBehaviour.cs" />

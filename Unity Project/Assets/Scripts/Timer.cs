@@ -17,8 +17,11 @@ public class Timer : MonoBehaviour {
 		if (!isPause()) 
 		{
 			timeRemaining -= Time.deltaTime;
+			if (timeRemaining < 10.0){
+				guiText.color = Color.red;
+			}
 			if (timeRemaining > 0.0)
-				guiText.text = "Time left: " + timeRemaining.ToString ("0.0");
+				guiText.text = timeRemaining.ToString ("0.0");
 			else
 				StartCoroutine (Fail());
 		}
