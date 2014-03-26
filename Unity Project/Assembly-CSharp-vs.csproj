@@ -49,6 +49,7 @@
      <Compile Include="Assets\Example\SampleCodeUse.cs" />
      <Compile Include="Assets\Scripts\BackToMenu.cs" />
      <Compile Include="Assets\Scripts\Brick_Basic.cs" />
+     <Compile Include="Assets\Scripts\Brick_Glass.cs" />
      <Compile Include="Assets\Scripts\CenterMovement.cs" />
      <Compile Include="Assets\Scripts\Control.cs" />
      <Compile Include="Assets\Scripts\Counter.cs" />
