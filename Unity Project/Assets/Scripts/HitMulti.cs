@@ -15,6 +15,7 @@ public class HitMulti : MonoBehaviour
 
     void OnMouseDown()
     {
+		SharedBehaviour.current.isSingle = false;
         this.gameObject.rigidbody.isKinematic = false;
         this.gameObject.rigidbody.AddRelativeForce(-Vector3.forward * 1000);
         transform.Rotate(3f, 30f, 0);

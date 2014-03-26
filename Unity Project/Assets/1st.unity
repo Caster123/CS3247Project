@@ -1260,7 +1260,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d84d1e1c99c65b4d96abba264481430, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeToWait: 3
   numTarget: 2
+  layerNum: 0
+  level: 0
 --- !u!1 &2030995465
 GameObject:
   m_ObjectHideFlags: 0
