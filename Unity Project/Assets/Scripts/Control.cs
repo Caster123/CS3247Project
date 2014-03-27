@@ -115,7 +115,7 @@ public class Control : MonoBehaviour {
 			timeAtButtonDown = timeCurrent;
 			continuing = true;
 			angle = Mathf.Atan2 (player.transform.position.z, player.transform.position.x)*Mathf.Rad2Deg;
-			print (angle);
+			//print (angle);
 		}
 	}
 

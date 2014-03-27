@@ -18,7 +18,7 @@ public class Player : MonoBehaviour {
 
         var tempH = Input.GetAxis("Horizontal");
         transform.Rotate(0, -tempH * Mathf.Sin(turnSpeed * Time.deltaTime), 0);
-		print (tempH);
+		//print (tempH);
         var tempH2 = Input.GetAxis("Horizontal");
         transform.Translate(tempH2 * Mathf.Sin(turnSpeed * Time.deltaTime), 0, 0);
 

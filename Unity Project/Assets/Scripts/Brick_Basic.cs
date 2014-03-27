@@ -5,8 +5,10 @@ using System;
 public class Brick_Basic : MonoBehaviour {
 
 	// Use this for initialization
+	bool removed;
     void Start()
     {
+		removed = false;
         rigidbody.SetDensity((float)Convert.ToInt32(this.tag));
 	}
 
@@ -19,12 +21,12 @@ public class Brick_Basic : MonoBehaviour {
 
     void OnMouseDown()
     {
-		if (!isPause() && isReady())
+		if (!isPause() && isReady() && !removed)
 		{
 			reset ();
 	        audio.pitch = (float)1.5;
 	        audio.PlayOneShot(attack);
-
+			removed = true;
 	        
 	        //Application.LoadLevel("basic");
 	        //Application.LoadLevel("1st");
@@ -44,10 +46,32 @@ public class Brick_Basic : MonoBehaviour {
         }
         yield return new WaitForSeconds(waitTime);
         Destroy(this.gameObject);
-		GameObject target = GameObject.Find("Counter");
-		Counter c = target.GetComponent<Counter>();
-		c.addRemove();
+		updateDisplay ();
     }
+
+	bool isSingle()
+	{
+		//** Temporary usage!!!! Remeber to change it to Shared
+		return (GameObject.Find ("TimerMulti") == null);
+	}
+
+	void updateDisplay()
+	{
+		if (isSingle ())
+		{
+			print("S");
+			GameObject target = GameObject.Find("Counter");
+			Counter c = target.GetComponent<Counter>();
+			c.addRemove();
+		}
+		else
+		{
+			print ("MU");
+			GameObject target = GameObject.Find ("TimerMulti");
+			TimerMulti tm = target.GetComponent<TimerMulti>();
+			tm.addRemove();
+		}
+	}
 	
 	bool isPause()
 	{
@@ -58,15 +82,56 @@ public class Brick_Basic : MonoBehaviour {
 
 	bool isReady()
 	{
-		GameObject target = GameObject.Find("EnergyTimer");
-		EnergyTimer et = target.GetComponent<EnergyTimer>();
-		return et.isReady();
+		if (isSingle())
+		{
+			GameObject target = GameObject.Find("EnergyTimer");
+			EnergyTimer et = target.GetComponent<EnergyTimer>();
+			return et.isReady();
+		}
+		else
+		{
+			GameObject target = GameObject.Find ("TimerMulti");
+			TimerMulti tm = target.GetComponent<TimerMulti>();
+			if (tm.getPlayer() == 0)
+			{
+				GameObject target0 = GameObject.Find("EnergyTimer0");
+				EnergyTimer et0 = target0.GetComponent<EnergyTimer>();
+				return et0.isReady();
+			}
+			else
+			{
+				GameObject target0 = GameObject.Find("EnergyTimer1");
+				EnergyTimer et0 = target0.GetComponent<EnergyTimer>();
+				return et0.isReady();
+			}
+		}
 	}
 
 	void reset()
 	{
-		GameObject target = GameObject.Find("EnergyTimer");
-		EnergyTimer et = target.GetComponent<EnergyTimer>();
-		et.Reset();
+		if (isSingle())
+		{
+			GameObject target = GameObject.Find("EnergyTimer");
+			EnergyTimer et = target.GetComponent<EnergyTimer>();
+			et.Reset();
+		}
+		else
+		{
+			GameObject target = GameObject.Find ("TimerMulti");
+			TimerMulti tm = target.GetComponent<TimerMulti>();
+			if (tm.getPlayer() == 0)
+			{
+				GameObject target0 = GameObject.Find("EnergyTimer0");
+				EnergyTimer et0 = target0.GetComponent<EnergyTimer>();
+				et0.Reset();
+			}
+			else
+			{
+				GameObject target0 = GameObject.Find("EnergyTimer1");
+				EnergyTimer et0 = target0.GetComponent<EnergyTimer>();
+				et0.Reset();
+			}
+			tm.changePlayer();
+		}
 	}
 }

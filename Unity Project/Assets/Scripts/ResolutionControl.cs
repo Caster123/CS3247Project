@@ -6,7 +6,7 @@ public class ResolutionControl : MonoBehaviour {
 	int originalFont;
 	// Use this for initialization
 	void Start () {
-		print (Screen.width + " " +  Screen.height);
+		//print (Screen.width + " " +  Screen.height);
 		if (guiTexture!=null)
 			originalSettings = guiTexture.pixelInset;
 		if (guiText!=null)
