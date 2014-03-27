@@ -65,6 +65,9 @@ public class Counter : MonoBehaviour {
 		if (!fail)
 			if (numRemoved == numTarget) {
 				print ("Game Success!");
+				int highestLevel = PlayerPrefs.GetInt("HighestLevel");
+				if (level == highestLevel)
+					PlayerPrefs.SetInt("HighestLevel", level+1);
 				//if (SharedBehaviour != null)
 				StartCoroutine (Success());
 			}

@@ -17,6 +17,7 @@ public class HitSingle : MonoBehaviour
 
     void OnMouseDown()
     {
+		SharedBehaviour.current.isSingle = true;
         audio.PlayOneShot(hit);
         this.gameObject.rigidbody.isKinematic = false;
         this.gameObject.rigidbody.AddRelativeForce(-Vector3.forward * 1000);

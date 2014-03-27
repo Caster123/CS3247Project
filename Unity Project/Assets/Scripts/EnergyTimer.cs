@@ -3,20 +3,25 @@ using System.Collections;
 
 public class EnergyTimer : MonoBehaviour {
 	public float timeToWait = 3.0f;
+	public Texture2D Ready;
+	public Texture2D notReady;
 	private float timeRemaining;
 	private bool ready;
+	Rect originalSettings;
 	// Use this for initialization
 	void Start () 
 	{
 		timeRemaining = 0.0f;
 		ready = true;
-		guiText.text = "READY";
+		guiTexture.texture = Ready;
+		if (guiTexture!=null)
+			originalSettings = guiTexture.pixelInset;
 	}
 
 	public void Reset()
 	{
 		timeRemaining = timeToWait;
-		guiText.text = timeRemaining.ToString ("0.0");
+		guiTexture.texture = notReady;
 		ready = false;
 	}
 
@@ -34,11 +39,11 @@ public class EnergyTimer : MonoBehaviour {
 			{
 				timeRemaining -= Time.deltaTime;
 				if (timeRemaining > 0.0f)
-					guiText.text = timeRemaining.ToString ("0.0");
+					guiTexture.pixelInset =  new Rect(0, 0, originalSettings.width*Screen.width/1280.0f*(timeToWait - timeRemaining)/timeToWait, originalSettings.height*Screen.height/800.0f);
 				else
 				{
 					ready = true;
-					guiText.text = "READY";
+					guiTexture.texture = Ready;
 				}
 			}
 		}

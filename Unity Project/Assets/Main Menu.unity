@@ -799,6 +799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLevel: 0
+  isSingle: 1
 --- !u!4 &983636210
 Transform:
   m_ObjectHideFlags: 0

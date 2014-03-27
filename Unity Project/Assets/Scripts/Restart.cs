@@ -7,18 +7,20 @@ public class Restart : MonoBehaviour {
 	public AudioClip hit = Resources.Load("building crush") as AudioClip;
 	string levelName;
 	// Update is called once per frame
-	void Update()
-	{
+	void Update(){
 	}
 	
-	void OnMouseDown()
-	{
+	void OnMouseDown(){
 		audio.PlayOneShot(hit);
 
 		if (SharedBehaviour.current.currentLevel == 0)
 			levelName = "Tutorial";
-		else
-			levelName = "level" + SharedBehaviour.current.currentLevel;
+		else{
+			if (SharedBehaviour.current.isSingle)
+				levelName = "level" + SharedBehaviour.current.currentLevel;
+			else
+				levelName = "level" + SharedBehaviour.current.currentLevel + "Multi";
+		}
 		print (levelName);
 
 		this.gameObject.rigidbody.isKinematic = false;
@@ -31,8 +33,7 @@ public class Restart : MonoBehaviour {
 		//Application.LoadLevel("basic");
 	}
 	
-	IEnumerator Wait(float waitTime)
-	{
+	IEnumerator Wait(float waitTime){
 		yield return new WaitForSeconds(waitTime);
 		Application.LoadLevel(levelName);
 	}    

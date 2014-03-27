@@ -5,13 +5,14 @@ public class Control : MonoBehaviour {
 	
 	public float turnSpeed = 120;
 	public float upSpeed = 60;
-	public Transform player;
-	public Transform center;
 	public float UpperBound = 100.0f;
 	public float LowerBound = 0.0f;
 	public Texture2D up;
 	public Texture2D down;
 
+	private Transform player;
+	private Transform center;
+	
 	float timeCurrent;
 	float timeAtButtonDown ; 
 	float timeAtButtonUp ;
@@ -22,6 +23,8 @@ public class Control : MonoBehaviour {
 	float yConstant;
 	// Use this for initialization
 	void Start () {
+		player = GameObject.Find ("Player").transform;
+		center = GameObject.Find ("Center").transform;
 		rad = Mathf.Sqrt ((center.transform.position.x - player.transform.position.x)
 						* (center.transform.position.x - player.transform.position.x)
 						+ (center.transform.position.z - player.transform.position.z)
@@ -37,14 +40,14 @@ public class Control : MonoBehaviour {
 		timeCurrent = Time.fixedTime;
 		if ((Input.GetMouseButtonDown (0) && !continuing) || (!Input.GetMouseButtonUp(0)&&continuing)) {
 						if (continuing) {
-								timeAtButtonUp = timeCurrent;
-								timeButtonHeld = (timeAtButtonUp - timeAtButtonDown);
+								//timeAtButtonUp = timeCurrent;
+								//timeButtonHeld = (timeAtButtonUp - timeAtButtonDown);
 								if (this.name == "Up") {
-									float move = Mathf.Min(upSpeed * timeButtonHeld, UpperBound - player.transform.position.y);
+									float move = Mathf.Min(upSpeed, UpperBound - player.transform.position.y);
 									player.transform.Translate (0, move, 0);
 								}
 								if (this.name == "Down") {
-									float move = Mathf.Max(-upSpeed * timeButtonHeld, LowerBound - player.transform.position.y);
+									float move = Mathf.Max(-upSpeed, LowerBound - player.transform.position.y);
 									player.transform.Translate (0, move, 0);
 								}
 								if (this.name == "Left") {
@@ -73,14 +76,14 @@ public class Control : MonoBehaviour {
 				} else {
 			//print ("Up");
 						if (continuing) {
-								timeAtButtonUp = timeCurrent;
-								timeButtonHeld = (timeAtButtonUp - timeAtButtonDown);
+								//timeAtButtonUp = timeCurrent;
+								//timeButtonHeld = (timeAtButtonUp - timeAtButtonDown);
 								if (this.name == "Up") {
-									float move = Mathf.Min(upSpeed * timeButtonHeld, UpperBound - player.transform.position.y);
+									float move = Mathf.Min(upSpeed, UpperBound - player.transform.position.y);
 									player.transform.Translate (0, move, 0);
 								}
 								if (this.name == "Down") {
-									float move = Mathf.Max(-upSpeed * timeButtonHeld, LowerBound - player.transform.position.y);
+									float move = Mathf.Max(-upSpeed, LowerBound - player.transform.position.y);
 									player.transform.Translate (0, move, 0);
 
 								}
@@ -112,7 +115,7 @@ public class Control : MonoBehaviour {
 			timeAtButtonDown = timeCurrent;
 			continuing = true;
 			angle = Mathf.Atan2 (player.transform.position.z, player.transform.position.x)*Mathf.Rad2Deg;
-			print (angle);
+			//print (angle);
 		}
 	}
 
