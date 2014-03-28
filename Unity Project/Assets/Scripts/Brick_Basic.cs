@@ -6,9 +6,11 @@ public class Brick_Basic : MonoBehaviour {
 
 	// Use this for initialization
 	bool removed;
+	private int realPlayer;
     void Start()
     {
 		removed = false;
+		realPlayer = 0;
         rigidbody.SetDensity((float)Convert.ToInt32(this.tag));
 	}
 
@@ -21,6 +23,7 @@ public class Brick_Basic : MonoBehaviour {
 
     void OnMouseDown()
     {
+		realPlayer = getRealPlayer ();
 		if (!isPause() && isReady() && !removed)
 		{
 			reset ();
@@ -37,7 +40,7 @@ public class Brick_Basic : MonoBehaviour {
 
     IEnumerator Wait(float waitTime)
     {
-        for (int i=0; i< 10; i++)
+        for (int i=0; i< 5; i++)
         {
             renderer.enabled = false;
             yield return new WaitForSeconds((float)0.05);
@@ -55,21 +58,31 @@ public class Brick_Basic : MonoBehaviour {
 		return (GameObject.Find ("TimerMulti") == null);
 	}
 
+	int getRealPlayer()
+	{
+		if (!isSingle ()){
+			GameObject target = GameObject.Find ("TimerMulti");
+			TimerMulti tm = target.GetComponent<TimerMulti>();
+			return tm.getPlayer();
+		}
+		return 0;
+	}
+
 	void updateDisplay()
 	{
 		if (isSingle ())
 		{
-			print("S");
+			//print("S");
 			GameObject target = GameObject.Find("Counter");
 			Counter c = target.GetComponent<Counter>();
 			c.addRemove();
 		}
 		else
 		{
-			print ("MU");
+			//print ("MU");
 			GameObject target = GameObject.Find ("TimerMulti");
 			TimerMulti tm = target.GetComponent<TimerMulti>();
-			tm.addRemove();
+			tm.addRemove(realPlayer);
 		}
 	}
 	

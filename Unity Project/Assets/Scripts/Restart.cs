@@ -5,7 +5,11 @@ public class Restart : MonoBehaviour {
 	
 	// Use this for initialization
 	public AudioClip hit = Resources.Load("building crush") as AudioClip;
+	//public AudioClip voice;
 	string levelName;
+
+	void Start(){
+	}
 	// Update is called once per frame
 	void Update(){
 	}
@@ -29,7 +33,7 @@ public class Restart : MonoBehaviour {
 		//Destroy(this.gameObject);
 		//Application.LoadLevel("basic");
 		//Application.LoadLevel("1st");
-		StartCoroutine(Wait(1.5F));
+		StartCoroutine(Wait(1.0F));
 		//Application.LoadLevel("basic");
 	}
 	

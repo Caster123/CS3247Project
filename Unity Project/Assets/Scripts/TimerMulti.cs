@@ -5,7 +5,7 @@ public class TimerMulti : MonoBehaviour {
 
 	public float timeLimit = 120.0f;
 	public int layerNum = 10;
-	public float timeToWait = 3.0f;
+	public float timeToWait = 1.5f;
 	public int level = 1;
 	private float[] timeRemaining;
 	private int player;
@@ -53,7 +53,7 @@ public class TimerMulti : MonoBehaviour {
 		player = 1 - player;
 	}
 
-	public void checkForFailure() {
+	public void checkForFailure(int realPlayer) {
 		GameObject[] goArray = FindObjectsOfType(typeof(GameObject)) as GameObject[];
 		print (goArray.Length);
 		for (int i = 0; i < goArray.Length; i++) {
@@ -64,7 +64,7 @@ public class TimerMulti : MonoBehaviour {
 				//print (layerNum);
 				if (onGround(goArray[i])){
 					print ("Game End");
-					StartCoroutine (Win(1-player));
+					StartCoroutine (Win(1-realPlayer));
 				}
 			}
 			
@@ -83,16 +83,16 @@ public class TimerMulti : MonoBehaviour {
 		return (hit.transform.gameObject.tag == "Plane" && hit.distance < go.transform.renderer.bounds.size.y/2 + 0.001);
 	}
 
-	public void addRemove()
+	public void addRemove(int realPlayer)
 	{
-		StartCoroutine(updateDisplay());
+		//StartCoroutine(updateDisplay(realPlayer));
 		//
 	}
 	
-	public IEnumerator updateDisplay () {
+	public IEnumerator updateDisplay (int realPlayer) {
 		yield return new WaitForSeconds(timeToWait);
 		print ("Start checking");
-		checkForFailure();
+		checkForFailure(realPlayer);
 	}
 
 	public IEnumerator Win(int player) {

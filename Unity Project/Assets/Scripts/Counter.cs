@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Counter : MonoBehaviour {
-	public float timeToWait = 3.0f;
+	public float timeToWait = 1.5f;
 	public int numTarget,layerNum;
 	public int level = 0;
 	private int numRemoved;
@@ -59,9 +59,9 @@ public class Counter : MonoBehaviour {
 
 	public IEnumerator updateDisplay () {
 		guiText.text = (numTarget - numRemoved).ToString();
-		yield return new WaitForSeconds(timeToWait);
-		print ("Start checking");
-		checkForFailure();
+		yield return new WaitForSeconds(0.0f);
+		//print ("Start checking");
+		//checkForFailure();
 		if (!fail)
 			if (numRemoved == numTarget) {
 				print ("Game Success!");

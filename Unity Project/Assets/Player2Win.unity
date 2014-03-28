@@ -611,7 +611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b3308cb49d12cd449c9b4b31f63664f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: StructureChooseS
+  sceneName: StructureChooseM
 --- !u!4 &1906233106
 Transform:
   m_ObjectHideFlags: 0

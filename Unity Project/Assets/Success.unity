@@ -391,6 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 8300000, guid: f15f6c99c8b5c9d41a64d14fe7eb0747, type: 3}
+  voice: {fileID: 0}
 --- !u!82 &1294703834
 AudioSource:
   m_ObjectHideFlags: 0
