@@ -942,7 +942,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 604664442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6e86a049a2a2404497d342d1b0f5dcb, type: 3}
+  m_Script: {fileID: 11500000, guid: aafff68f95ea2e14893f22283d7aaa7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!54 &604664444
@@ -972,7 +972,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 96558d9af5ccba84da0a06dc9afa072d, type: 2}
+  - {fileID: 2100000, guid: 6ce5d345d18395d4b9abc422cf51d0eb, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
