@@ -44,6 +44,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Level4.unity
   - enabled: 1
+    path: Assets/Level5.unity
+  - enabled: 1
     path: Assets/Level6.unity
   - enabled: 1
     path: Assets/Level1Multi.unity
@@ -53,3 +55,5 @@ EditorBuildSettings:
     path: Assets/Level3Multi.unity
   - enabled: 1
     path: Assets/Level4Multi.unity
+  - enabled: 1
+    path: Assets/Level5Multi.unity
