@@ -25,6 +25,10 @@ public class SharedBehaviour : MonoBehaviour {
 	}
 
 	void Start(){
+		print (PlayerPrefs.GetInt ("Played"));
+		if (PlayerPrefs.GetInt("Played") == 0)
+			Application.LoadLevel("ManIntroduction1");
+		PlayerPrefs.SetInt ("Played", 1);
 		print (PlayerPrefs.GetInt ("HighestLevel"));
 		//PlayerPrefs.SetInt("HighestLevel", 0);
 	}
