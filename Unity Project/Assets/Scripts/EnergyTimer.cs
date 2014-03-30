@@ -11,11 +11,12 @@ public class EnergyTimer : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+		if (guiTexture!=null)
+			originalSettings = guiTexture.pixelInset;
+		//print (originalSettings);
 		timeRemaining = 0.0f;
 		ready = true;
 		guiTexture.texture = Ready;
-		if (guiTexture!=null)
-			originalSettings = guiTexture.pixelInset;
 	}
 
 	public void Reset()
@@ -39,7 +40,8 @@ public class EnergyTimer : MonoBehaviour {
 			{
 				timeRemaining -= Time.deltaTime;
 				if (timeRemaining > 0.0f)
-					guiTexture.pixelInset =  new Rect(0, 0, originalSettings.width*Screen.width/1280.0f*(timeToWait - timeRemaining)/timeToWait, originalSettings.height*Screen.height/800.0f);
+					//guiTexture.pixelInset =  new Rect(0, 0, originalSettings.width*Screen.width/1280.0f*(timeToWait - timeRemaining)/timeToWait, originalSettings.height*Screen.height/800.0f);
+					guiTexture.pixelInset =  new Rect(0, 0, originalSettings.width*(timeToWait - timeRemaining)/timeToWait, originalSettings.height);
 				else
 				{
 					ready = true;
