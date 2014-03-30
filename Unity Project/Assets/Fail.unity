@@ -309,6 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 8300000, guid: f15f6c99c8b5c9d41a64d14fe7eb0747, type: 3}
+  result: {fileID: 8300000, guid: adadd7fa38c861a4d9c633f802e5b19f, type: 3}
 --- !u!54 &999405157
 Rigidbody:
   m_ObjectHideFlags: 0

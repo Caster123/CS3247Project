@@ -5,10 +5,12 @@ public class Restart : MonoBehaviour {
 	
 	// Use this for initialization
 	public AudioClip hit = Resources.Load("building crush") as AudioClip;
+	public AudioClip result;
 	//public AudioClip voice;
 	string levelName;
 
 	void Start(){
+		audio.PlayOneShot(result);
 	}
 	// Update is called once per frame
 	void Update(){
