@@ -566,7 +566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4366be74c0160354b8b1c0321707b910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToWait: 2
+  timeToWait: 3
   Ready: {fileID: 2800000, guid: 5b411586aa4ea634a9f879c66a398e44, type: 3}
   notReady: {fileID: 2800000, guid: 180f643ef65852d4b89296afed36f86a, type: 3}
 --- !u!131 &237161542
@@ -665,7 +665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4366be74c0160354b8b1c0321707b910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToWait: 2
+  timeToWait: 3
   Ready: {fileID: 2800000, guid: 5b411586aa4ea634a9f879c66a398e44, type: 3}
   notReady: {fileID: 2800000, guid: 180f643ef65852d4b89296afed36f86a, type: 3}
 --- !u!131 &280827696
