@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\HitMulti.cs" />
      <Compile Include="Assets\Scripts\HitSingle.cs" />
      <Compile Include="Assets\Scripts\HitStartMission.cs" />
+     <Compile Include="Assets\Scripts\NextLevel.cs" />
      <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\ResolutionControl.cs" />

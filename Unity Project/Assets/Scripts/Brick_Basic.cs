@@ -23,12 +23,15 @@ public class Brick_Basic : MonoBehaviour {
 
     void OnMouseDown()
     {
+		audio.PlayOneShot(attack);
 		realPlayer = getRealPlayer ();
 		if (!isPause() && isReady() && !removed)
 		{
 			reset ();
-	        audio.pitch = (float)1.5;
+	        //audio.pitch = (float)1.0;
+			//print ("before audio");
 	        audio.PlayOneShot(attack);
+			//print ("after");
 			removed = true;
 	        
 	        //Application.LoadLevel("basic");
