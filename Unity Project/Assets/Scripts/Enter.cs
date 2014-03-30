@@ -6,6 +6,7 @@ public class Enter : MonoBehaviour {
 	// Use this for initialization
 	public AudioClip hit = Resources.Load("building crush") as AudioClip;
 	public int level = 5;
+	public Texture t;
 	//string title;
 	//public Color originalColor = new Color(1.0f,1.0f,1.0f);
 	//public Color highlightColor = new Color(0.5f,0.0f,0.3f);
@@ -22,7 +23,8 @@ public class Enter : MonoBehaviour {
 		if (highestLevel >= level) {
 			MeshRenderer gameObjectRenderer = this.GetComponent<MeshRenderer>();
 			Material newMaterial = new Material(Shader.Find("Diffuse"));
-			//newMaterial.color = originalColor;
+			newMaterial.mainTexture = t;
+			//newMaterial.color = Color.black;
 			gameObjectRenderer.material = newMaterial ;
 			GameObject go = GameObject.Find (level.ToString());
 			go.renderer.enabled = true;
