@@ -5,7 +5,7 @@ public class TimerMulti : MonoBehaviour {
 
 	public float timeLimit = 120.0f;
 	public int layerNum = 10;
-	public float timeToWait = 1.5f;
+	//public float timeToWait = 1.5f;
 	public int level = 1;
 	private float[] timeRemaining;
 	private int player;
@@ -90,7 +90,7 @@ public class TimerMulti : MonoBehaviour {
 	}
 	
 	public IEnumerator updateDisplay (int realPlayer) {
-		yield return new WaitForSeconds(timeToWait);
+		yield return new WaitForSeconds(0.0f);
 		print ("Start checking");
 		checkForFailure(realPlayer);
 	}
