@@ -1,26 +1,31 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Enter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BackToMenu.cs">
     <Files>
-      <File FileName="Assets\Scripts\TimerMulti.cs" Line="101" Column="8" />
-      <File FileName="Assets\Scripts\Exit.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\BackToMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BackToMenu.cs" Line="11" Column="6" />
+      <File FileName="Assets\Scripts\BackToMenu.cs" Line="24" Column="1" />
       <File FileName="Assets\Scripts\Restart.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TimerMulti.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Exit.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Brick_Glass.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Brick_Basic.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Enter.cs" Line="23" Column="20" />
+      <File FileName="Assets\Scripts\Enter.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ResolutionControl.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Timer.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Counter.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Control.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SharedBehaviour.cs" Line="30" Column="43" />
+      <File FileName="Assets\Scripts\SharedBehaviour.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Pause.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\HitSingle.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\HitMulti.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Player.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EnergyTimer.cs" Line="44" Column="133" />
-      <File FileName="Assets\Scripts\HitStartMission.cs" Line="33" Column="51" />
+      <File FileName="Assets\Scripts\EnergyTimer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\HitStartMission.cs" Line="33" Column="40" />
+      <File FileName="Assets\Scripts\NextLevel.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\HitIntro1.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\HitIntro5.cs" Line="29" Column="6" />
+      <File FileName="Assets\Scripts\HitIntroMan.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

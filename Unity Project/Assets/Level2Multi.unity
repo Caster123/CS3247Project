@@ -1470,7 +1470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeLimit: 20
   layerNum: 10
-  level: 1
+  level: 2
 --- !u!1 &508596199
 GameObject:
   m_ObjectHideFlags: 0
