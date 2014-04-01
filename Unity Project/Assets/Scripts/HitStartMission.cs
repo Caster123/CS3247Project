@@ -30,6 +30,6 @@ public class HitStartMission : MonoBehaviour
     IEnumerator Wait(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        Application.LoadLevel("Tutorial");
+        Application.LoadLevel("TutorialIntro1");
     }    
 }
