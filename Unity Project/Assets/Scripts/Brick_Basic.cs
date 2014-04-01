@@ -14,7 +14,7 @@ public class Brick_Basic : MonoBehaviour {
         rigidbody.SetDensity((float)Convert.ToInt32(this.tag));
 	}
 
-    public AudioClip attack = Resources.Load("lazer") as AudioClip;
+    public AudioClip attack;
 
     // Update is called once per frame
     void Update()
@@ -25,10 +25,11 @@ public class Brick_Basic : MonoBehaviour {
     {
 		//audio.PlayOneShot(attack);
 		realPlayer = getRealPlayer ();
-		if (!isPause() && isReady() && !removed)
+		if (!isPause() && isReady() && !removed && !isPadTouched())
 		{
 			reset ();
 	        audio.pitch = (float)1.5;
+			//audio.volume = 24.0f;
 			//print ("before audio");
 	        audio.PlayOneShot(attack);
 			//print ("after");
@@ -87,6 +88,13 @@ public class Brick_Basic : MonoBehaviour {
 			TimerMulti tm = target.GetComponent<TimerMulti>();
 			tm.addRemove(realPlayer);
 		}
+	}
+
+	bool isPadTouched()
+	{
+		GameObject target = GameObject.Find("PAD");
+		Pad p = target.GetComponent<Pad>();
+		return p.isPadTouched();
 	}
 	
 	bool isPause()
