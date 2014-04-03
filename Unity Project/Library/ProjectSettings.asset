@@ -10,7 +10,7 @@ PlayerSettings:
   targetGlesGraphics: 1
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: WaterDrop
+  companyName: Waterdrop
   productName: LastPiece
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -94,7 +94,7 @@ PlayerSettings:
   iPhoneTargetOSVersion: 16
   uIPrerenderedIcon: 0
   uIRequiresPersistentWiFi: 0
-  uIStatusBarHidden: 1
+  uIStatusBarHidden: 0
   uIExitOnSuspend: 0
   uIStatusBarStyle: 0
   iPhoneSplashScreen: {fileID: 0}
@@ -112,19 +112,19 @@ PlayerSettings:
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 2800000, guid: 7e9bdca52ac74344593af8d01e954595, type: 3}
+    - m_Icon: {fileID: 2800000, guid: 7054af3b97aebca4bb18d9af03a87096, type: 3}
       m_Size: 128
   - m_BuildTarget: Android
     m_Icons:
     - m_Icon: {fileID: 2800000, guid: 7e9bdca52ac74344593af8d01e954595, type: 3}
       m_Size: 144
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: 7e9bdca52ac74344593af8d01e954595, type: 3}
       m_Size: 96
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: 7e9bdca52ac74344593af8d01e954595, type: 3}
       m_Size: 72
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: 7e9bdca52ac74344593af8d01e954595, type: 3}
       m_Size: 48
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: 7e9bdca52ac74344593af8d01e954595, type: 3}
       m_Size: 36
   m_BuildTargetBatching:
   - m_BuildTarget: Android

@@ -110,6 +110,8 @@ public class Control : MonoBehaviour {
 
 	void OnMouseDown()
 	{
+		//print (this.name);
+		setPadTouched ();
 		if (!isPause ()){
 			this.guiTexture.texture = down;
 			timeAtButtonDown = timeCurrent;
@@ -122,6 +124,21 @@ public class Control : MonoBehaviour {
 	void OnMouseUp()
 	{
 		this.guiTexture.texture = up;
+		setPadUntouched ();
+	}
+
+	void setPadTouched()
+	{
+		GameObject target = GameObject.Find("PAD");
+		Pad p = target.GetComponent<Pad>();
+		p.setPadTouched();
+	}
+
+	void setPadUntouched()
+	{
+		GameObject target = GameObject.Find("PAD");
+		Pad p = target.GetComponent<Pad>();
+		p.setPadUntouched();
 	}
 
 	bool isPause(){
