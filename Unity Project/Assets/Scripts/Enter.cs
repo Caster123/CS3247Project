@@ -33,6 +33,7 @@ public class Enter : MonoBehaviour {
 	
 	void OnMouseDown()
 	{
+        this.gameObject.rigidbody.AddRelativeForce(Vector3.forward * 1000);
 		int highestLevel = PlayerPrefs.GetInt ("HighestLevel");
 		print (highestLevel);
 		if (highestLevel >= level) {
