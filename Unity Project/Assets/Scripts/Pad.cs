@@ -5,7 +5,9 @@ public class Pad : MonoBehaviour {
 	bool isTouched = false;
 	// Use this for initialization
 	void Start () {
-	
+		//GameObject go = GameObject.Find ("PAD");
+		//go.renderer.enabled = false;
+		this.guiTexture.texture = null;
 	}
 	
 	// Update is called once per frame
