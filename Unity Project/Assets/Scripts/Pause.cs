@@ -18,13 +18,33 @@ public class Pause : MonoBehaviour {
 
 	void OnMouseDown() {
 		if (pause){
+			setPadTouched();
 			pause = false;
 			this.guiTexture.texture = up;
 		}
 		else{
+			setPadTouched();
 			pause = true;
 			this.guiTexture.texture = down;
 		}
+	}
+
+	void OnMouseUp(){
+		setPadUntouched ();
+	}
+
+	void setPadTouched()
+	{
+		GameObject target = GameObject.Find("PAD");
+		Pad p = target.GetComponent<Pad>();
+		p.setPadTouched();
+	}
+	
+	void setPadUntouched()
+	{
+		GameObject target = GameObject.Find("PAD");
+		Pad p = target.GetComponent<Pad>();
+		p.setPadUntouched();
 	}
 
 	public bool check(){
