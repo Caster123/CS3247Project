@@ -1,2 +1,0 @@
-Assets/StructureChooseS.unity
-Assets/TutorialIntro7.unity
