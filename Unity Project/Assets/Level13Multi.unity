@@ -1254,9 +1254,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40bda21db266efe459d783ebaafff69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 20
+  timeLimit: 30
   layerNum: 10
-  level: 1
+  level: 13
 --- !u!1 &482009287
 GameObject:
   m_ObjectHideFlags: 0
@@ -2952,6 +2952,7 @@ GameObject:
   - 4: {fileID: 1469428168}
   - 131: {fileID: 1469428167}
   - 114: {fileID: 1469428166}
+  - 114: {fileID: 1469428169}
   m_Layer: 0
   m_Name: PauseSign
   m_TagString: Untagged
@@ -3000,6 +3001,17 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1469428169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1469428165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc21f1662c1f57a4597c73b9f0918b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1477925872
 GameObject:
   m_ObjectHideFlags: 0

@@ -119,3 +119,7 @@ EditorBuildSettings:
     path: Assets/Level17Multi.unity
   - enabled: 1
     path: Assets/Level18Multi.unity
+  - enabled: 1
+    path: Assets/Final1.unity
+  - enabled: 1
+    path: Assets/Final2.unity

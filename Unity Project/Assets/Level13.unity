@@ -612,9 +612,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToWait: 1.5
-  numTarget: 2
+  numTarget: 6
   layerNum: 10
-  level: 1
+  level: 13
 --- !u!132 &398371634
 GUIText:
   m_ObjectHideFlags: 0
@@ -1708,7 +1708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d061c6f122cf7548b64cd257bc39652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 20
+  timeLimit: 60
 --- !u!132 &950515792
 GUIText:
   m_ObjectHideFlags: 0
@@ -1887,6 +1887,7 @@ GameObject:
   - 4: {fileID: 1112446664}
   - 131: {fileID: 1112446663}
   - 114: {fileID: 1112446665}
+  - 114: {fileID: 1112446666}
   m_Layer: 0
   m_Name: PauseSign
   m_TagString: Untagged
@@ -1933,6 +1934,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a5f1771c122a9841a4b6d49c5a8d536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1112446666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1112446662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc21f1662c1f57a4597c73b9f0918b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1120209278
