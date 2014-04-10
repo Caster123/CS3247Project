@@ -612,9 +612,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToWait: 1.5
-  numTarget: 1
+  numTarget: 2
   layerNum: 10
-  level: 2
+  level: 1
 --- !u!132 &398371634
 GUIText:
   m_ObjectHideFlags: 0
