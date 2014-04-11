@@ -21,6 +21,8 @@ public class NextLevel : MonoBehaviour {
 			levelName = "level" + nextLevel;
 		else
 			levelName = "level" + nextLevel + "Multi";
+		if (nextLevel > 18)
+			levelName = "Final1";
 		print (levelName);
 
 		this.gameObject.rigidbody.isKinematic = false;

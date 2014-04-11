@@ -12,6 +12,8 @@ public class Counter : MonoBehaviour {
 	bool fail = false;
 	// Use this for initialization
 	void Start () {
+		// For testing
+		//numTarget = 1;
 		numRemoved = 0;
 		//print (layerNum);
 		//print ("EXE");
