@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\Pad.cs" />
      <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\PauseSign.cs" />
+     <Compile Include="Assets\Scripts\PlayAudio.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\ResolutionControl.cs" />
      <Compile Include="Assets\Scripts\Restart.cs" />

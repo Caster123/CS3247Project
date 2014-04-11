@@ -17,6 +17,9 @@ public class Brick_Glass : MonoBehaviour {
 
 		if (onGround ())
 		{
+			GameObject collapse = GameObject.Find("Collapse");
+			PlayAudio pa = collapse.GetComponent<PlayAudio>();
+			pa.play ();
 			print ("Game End");
 			if (isSingle())
 			{
