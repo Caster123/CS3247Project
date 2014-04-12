@@ -19,7 +19,7 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 74221948d8cb74f48841aae845fa224c, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 43462e4cddce52748ad818114d19d821, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -2373,7 +2373,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 57ba21e058b3a7c49878ee11049ab22f, type: 2}
+  - {fileID: 2100000, guid: 7b9c2955d60c63d41b40ce31276115e9, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2421,7 +2421,7 @@ AudioSource:
   m_GameObject: {fileID: 1496079243}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 0e67474567c1ab94eb29d35897fc0239, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a2315c501194d494fb7e7d44ed01b10f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
