@@ -3332,7 +3332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnSpeed: 1.5
-  upSpeed: 1.20000005
+  upSpeed: .200000003
   UpperBound: 20
   LowerBound: 0
   up: {fileID: 2800000, guid: 6a6c7fdf238a72f439f3362ae95bdbd7, type: 3}
@@ -3714,7 +3714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnSpeed: 1.5
-  upSpeed: 1.20000005
+  upSpeed: .100000001
   UpperBound: 20
   LowerBound: 0
   up: {fileID: 2800000, guid: 11175a74461e3644e804f7f7d5b3da16, type: 3}
