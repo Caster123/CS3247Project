@@ -892,7 +892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToWait: 2
-  numTarget: 8
+  numTarget: 4
   layerNum: 10
   level: 5
 --- !u!132 &165170388

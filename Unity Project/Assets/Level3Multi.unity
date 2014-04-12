@@ -3339,7 +3339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40bda21db266efe459d783ebaafff69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 35
+  timeLimit: 60
   layerNum: 10
   level: 3
 --- !u!1 &508596199

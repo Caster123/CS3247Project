@@ -1634,7 +1634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40bda21db266efe459d783ebaafff69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 20
+  timeLimit: 40
   layerNum: 10
   level: 2
 --- !u!1 &494229787
