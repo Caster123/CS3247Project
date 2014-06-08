@@ -45,6 +45,6 @@ public class SharedBehaviour : MonoBehaviour {
 		}
 		PlayerPrefs.SetInt ("Played", 1);
 		//print (PlayerPrefs.GetInt ("HighestLevel"));
-		PlayerPrefs.SetInt("HighestLevel", 19);
+		//PlayerPrefs.SetInt("HighestLevel", 19);
 	}
 }
